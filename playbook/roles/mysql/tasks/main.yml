@@ -1,0 +1,9 @@
+---
+- name: Creation of the MySQL database
+  mysql_db: name=DB_wordpress state=present
+
+- name: Creation of the database User, Password and Give this user all rights
+  mysql_user:
+    name=user_wordpress
+    password=password_wordpress
+    priv=*.*:ALL

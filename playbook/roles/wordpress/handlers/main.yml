@@ -1,0 +1,4 @@
+---
+- name: Restart apache when default Apache site is updated
+  service: name=apache2 state=restarted
+  become: yes

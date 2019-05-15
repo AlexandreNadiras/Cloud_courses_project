@@ -1,0 +1,15 @@
+---
+- name: Updating apt cache
+  apt:
+    update_cache: true
+
+- name: Installation of the latest release of the necessary packages
+  apt:
+    pkg:
+    - php-fpm
+    - php-mysql
+    - apache2
+    - mysql-server
+    - python-mysqldb
+    - libapache2-mod-php
+    state: latest

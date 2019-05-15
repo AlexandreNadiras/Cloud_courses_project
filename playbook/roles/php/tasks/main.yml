@@ -1,0 +1,7 @@
+---
+- name: Installation of the latest release of the php extensions
+  apt:
+    pkg:
+    - php-gd
+    - php-ssh2
+    state: latest
