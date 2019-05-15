@@ -35,7 +35,7 @@ I first wrote the Ansible playbook to deploy Wordpress on my server, which is hi
 
 Then to apply the playbook's content:
 
-  ansible-playbook -i hosts -l playbook.yml
+  - ansible-playbook -i hosts -l playbook.yml
 
 Now, you should be able to access the Wordpress webpage when typing in a browser the IP address of the server you just created.
 
@@ -43,6 +43,6 @@ Now, you should be able to access the Wordpress webpage when typing in a browser
 
 To build a reusable image of your server you can type the following command: (be aware of putting the sensitiv data as environment variables)
  
-  packer build  scaleway-cloud-courses.json
+  - packer build  scaleway-cloud-courses.json
 
 You can verify the creation of this image on your scaleway account, when used, it should display the Wordpress homepage, and you will be able to custom it as you wish.
