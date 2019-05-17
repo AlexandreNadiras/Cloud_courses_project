@@ -36,7 +36,7 @@ I first wrote the Ansible playbook to deploy Wordpress on my server, which is hi
 Then to apply the playbook's content:
 
   - cd playbook
-  - ansible-playbook -i hosts -l playbook.yml
+  - ansible-playbook playbook.yml -i hosts
 
 Now, you should be able to access the Wordpress webpage when typing in a browser the IP address of the server you just created.
 
